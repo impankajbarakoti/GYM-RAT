@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { ShoppingCart, X } from "lucide-react";
-// import { CartProvider, useCart } from "./context/CartContext";
-
-import { CartProvider, useCart } from "../Context/CartContext";
+import { CartProvider , useCart } from "../Context/CartContexts";
 
 import ProductsPage from "./ProductsPage";
 import ProductDetailPage from "./ProductDetailPage";
