@@ -10,7 +10,8 @@ import {
   List,
   Dumbbell,
 } from "lucide-react";
-import { useCart } from "../context/CartContext";
+// import { useCart } from "../context/CartContext";
+import { useCart} from '../Context/CartContexts'
 import productsData from "./productsData";
 
 const ProductDetailPage = ({ productId, onBack }) => {

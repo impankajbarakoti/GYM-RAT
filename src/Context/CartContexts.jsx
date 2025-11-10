@@ -1,5 +1,6 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useContext } from "react";
 
+// CartContext create karo
 export const CartContext = createContext(null);
 
 export const CartProvider = ({ children }) => {
@@ -56,4 +57,9 @@ export const CartProvider = ({ children }) => {
       {children}
     </CartContext.Provider>
   );
+};
+
+// Custom hook to access the CartContext
+export const useCart = () => {
+  return useContext(CartContext); // Use the context value
 };

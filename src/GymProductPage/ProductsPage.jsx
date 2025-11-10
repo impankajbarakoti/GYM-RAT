@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ShoppingCart, Star, ChevronRight } from "lucide-react";
-import { useCart } from "../context/CartContext";
+import {useCart} from '../Context/CartContexts'
 import productsData from "./productsData";
 
 const ProductsPage = ({ onSelectProduct }) => {
